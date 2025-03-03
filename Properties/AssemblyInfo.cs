@@ -1,16 +1,15 @@
 ﻿using System.Reflection;
-using System.Runtime.CompilerServices;
 using System.Runtime.InteropServices;
 
 // General Information about an assembly is controlled through the following
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("RDR2_DLSS_Replacer")]
+[assembly: AssemblyTitle("GTAV_DLSS_Replacer")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("RDR2_DLSS_Replacer")]
-[assembly: AssemblyCopyright("Copyright ©  2023")]
+[assembly: AssemblyProduct("GTAV_DLSS_Replacer")]
+[assembly: AssemblyCopyright("Copyright © Renerte 2025")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 
@@ -20,7 +19,7 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // The following GUID is for the ID of the typelib if this project is exposed to COM
-[assembly: Guid("a2836d5d-fb14-44c5-8b15-cf4b59e82149")]
+[assembly: Guid("4525d94b-0dc2-46e4-bf3a-66defd7a58ba")]
 
 // Version information for an assembly consists of the following four values:
 //
