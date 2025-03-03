@@ -1,4 +1,4 @@
 #(Optional)
-#If you want to automatically start RDR2 with this program, you can provide absolute path to RDR2.exe below.
+#If you want to automatically start GTAV with this program, you can provide absolute path to GTAV.exe below.
 #Example: (REMOVE hash from beginning)
-#C:\Program Files\Rockstar Games\Grand Theft Auto V Enhanced\RDR2.exe
+#C:\Program Files\Rockstar Games\Grand Theft Auto V Enhanced\GTAV.exe
