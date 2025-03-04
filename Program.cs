@@ -17,7 +17,7 @@ namespace GTAV_DLSS_Replacer
     [SupportedOSPlatform("windows")]
     internal static class Program
     {
-        private const string ProcessName = "GTAV";
+        private const string ProcessName = "GTA5_Enhanced";
 
         private const string DlssToUse = "nvngx_dlss.dll";
 
@@ -130,14 +130,12 @@ namespace GTAV_DLSS_Replacer
             try
             {
                 //detect start of apps
-                w = new ManagementEventWatcher("Select * From Win32_ProcessStartTrace WHERE ProcessName='" +
-                                               processNameComplete + "'");
+                w = new ManagementEventWatcher($"Select * From Win32_ProcessStartTrace WHERE ProcessName='{processNameComplete}'");
                 w.EventArrived += ProcessStartEventArrived;
                 w.Start();
 
                 //detect exit of apps
-                w2 = new ManagementEventWatcher("Select * From Win32_ProcessStopTrace WHERE ProcessName='" +
-                                                processNameComplete + "'");
+                w2 = new ManagementEventWatcher($"Select * From Win32_ProcessStopTrace WHERE ProcessName='{processNameComplete}'");
                 w2.EventArrived += ProcessStopEventArrived;
                 w2.Start();
 
@@ -190,7 +188,7 @@ namespace GTAV_DLSS_Replacer
                 {
                     //remove comments (starting with hash) and empty lines from file
                     var gtaVLocationA = File.ReadLines(GtaVLocationFileForAutoStart)
-                        .Where(line => !line.StartsWith("#") && !string.IsNullOrEmpty(line)).ToArray();
+                        .Where(line => !line.StartsWith('#') && !string.IsNullOrEmpty(line)).ToArray();
 
                     //read only first
                     var gtaVLocation = gtaVLocationA.FirstOrDefault();
