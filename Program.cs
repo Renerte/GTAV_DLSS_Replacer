@@ -139,7 +139,7 @@ internal static class Program
 
             //detect exit of apps
             w2 = new ManagementEventWatcher(
-                $"Select * From Win32_ProcessStopTrace WHERE ProcessName='{processNameComplete}'");
+                $"Select * From Win32_ProcessStopTrace WHERE ProcessName='{processNameComplete[..Math.Min(processNameComplete.Length, 14)]}'");
             w2.EventArrived += ProcessStopEventArrived;
             w2.Start();
 
