@@ -1,43 +1,43 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
-  <PropertyGroup>
-    <TargetFramework>net8.0-windows</TargetFramework>
-    <OutputType>Exe</OutputType>
-    <IsWebBootstrapper>false</IsWebBootstrapper>
-    <PublishUrl>publish\</PublishUrl>
-    <Install>true</Install>
-    <InstallFrom>Disk</InstallFrom>
-    <UpdateEnabled>false</UpdateEnabled>
-    <UpdateMode>Foreground</UpdateMode>
-    <UpdateInterval>7</UpdateInterval>
-    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
-    <UpdatePeriodically>false</UpdatePeriodically>
-    <UpdateRequired>false</UpdateRequired>
-    <MapFileExtensions>true</MapFileExtensions>
-    <ApplicationRevision>0</ApplicationRevision>
-    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
-    <UseApplicationTrust>false</UseApplicationTrust>
-    <BootstrapperEnabled>true</BootstrapperEnabled>
-    <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
-    <AssemblyTitle>GTAV_DLSS_Replacer</AssemblyTitle>
-    <Product>GTAV_DLSS_Replacer</Product>
-    <Copyright>Copyright © Renerte 2025</Copyright>
-    <AssemblyVersion>1.0.0.0</AssemblyVersion>
-    <FileVersion>1.0.0.0</FileVersion>
-    <LangVersion>default</LangVersion>
-  </PropertyGroup>
-  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
-    <DebugType>embedded</DebugType>
-    <DebugSymbols>true</DebugSymbols>
-  </PropertyGroup>
-  <PropertyGroup>
-    <ApplicationManifest>app.manifest</ApplicationManifest>
-  </PropertyGroup>
-  <ItemGroup>
-    <Content Include="gtav_location_for_auto_start.txt">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-  </ItemGroup>
-  <ItemGroup>
-    <PackageReference Include="System.Management" Version="9.0.2" />
-  </ItemGroup>
+    <PropertyGroup>
+        <TargetFramework>net8.0-windows</TargetFramework>
+        <OutputType>Exe</OutputType>
+        <IsWebBootstrapper>false</IsWebBootstrapper>
+        <PublishUrl>publish\</PublishUrl>
+        <Install>true</Install>
+        <InstallFrom>Disk</InstallFrom>
+        <UpdateEnabled>false</UpdateEnabled>
+        <UpdateMode>Foreground</UpdateMode>
+        <UpdateInterval>7</UpdateInterval>
+        <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+        <UpdatePeriodically>false</UpdatePeriodically>
+        <UpdateRequired>false</UpdateRequired>
+        <MapFileExtensions>true</MapFileExtensions>
+        <ApplicationRevision>0</ApplicationRevision>
+        <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+        <UseApplicationTrust>false</UseApplicationTrust>
+        <BootstrapperEnabled>true</BootstrapperEnabled>
+        <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
+        <AssemblyTitle>GTAV_DLSS_Replacer</AssemblyTitle>
+        <Product>GTAV_DLSS_Replacer</Product>
+        <Copyright>Copyright © Renerte 2025</Copyright>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <FileVersion>1.0.0.0</FileVersion>
+        <LangVersion>default</LangVersion>
+    </PropertyGroup>
+    <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+        <DebugType>embedded</DebugType>
+        <DebugSymbols>true</DebugSymbols>
+    </PropertyGroup>
+    <PropertyGroup>
+        <ApplicationManifest>app.manifest</ApplicationManifest>
+    </PropertyGroup>
+    <ItemGroup>
+        <Content Include="gtav_location_for_auto_start.txt">
+            <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+        </Content>
+    </ItemGroup>
+    <ItemGroup>
+        <PackageReference Include="System.Management" Version="9.0.2"/>
+    </ItemGroup>
 </Project>
